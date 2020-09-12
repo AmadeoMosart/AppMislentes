@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cl"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".Vista.ViewContenedorPrincipal.FragmenPrincipal.TiendaFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+       >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/item_anteojos"
+                    style="@style/Widget.Support.CoordinatorLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/alike"
+                    android:gravity="center_horizontal"
+                    android:text="@string/txtEyes"
+                    android:textAlignment="center"
+                    android:textSize="25sp" />
+                <LinearLayout
+                    android:id="@+id/anteojogone"
+                    android:layout_width="@dimen/longitud50"
+                    android:layout_height="@dimen/longitud5"
+                    android:background="@color/colorPrimary"
+                    android:orientation="horizontal"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                >
+
+                <TextView
+                    android:id="@+id/item_sol"
+                    style="@style/Widget.Support.CoordinatorLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/alike"
+                    android:gravity="center_horizontal"
+                    android:text="@string/txtSun"
+                    android:textAlignment="center"
+                    android:textSize="25sp" />
+                <LinearLayout
+                    android:id="@+id/solgone"
+                    android:layout_width="@dimen/longitud50"
+                    android:layout_height="@dimen/longitud5"
+                    android:background="@color/colorPrimary"
+                    android:visibility="gone"
+                    android:orientation="horizontal" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/item_contacto"
+                    style="@style/Widget.Support.CoordinatorLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/alike"
+                    android:gravity="center_horizontal"
+                    android:text="@string/txtContac"
+                    android:textAlignment="center"
+                    android:textSize="25sp" />
+                <LinearLayout
+                    android:id="@+id/gonecontacto"
+                    android:layout_width="@dimen/longitud50"
+                    android:layout_height="@dimen/longitud5"
+                    android:background="@color/colorPrimary"
+                    android:orientation="horizontal"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/frameLayoutTienda"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:layout_editor_absoluteX="-5dp"
+        tools:layout_editor_absoluteY="64dp"
+        tools:ignore="MissingConstraints">
+    </FrameLayout>
+
+</LinearLayout>

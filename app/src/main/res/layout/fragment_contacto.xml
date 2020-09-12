@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Vista.ViewContenedorPrincipal.FragmenteTienda.LentesContactoFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/longitud20"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:text="Desde 95 dolares incluyendo lentes de recetados"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="435dp">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="@dimen/longitud150"
+                android:layout_height="wrap_content"
+                android:text="Tienda Hombre" />
+
+            <LinearLayout
+                android:layout_width="32dp"
+                android:layout_height="match_parent"/>
+
+            <Button
+                android:layout_width="@dimen/longitud150"
+                android:layout_height="wrap_content"
+                android:text="Tienda Mujer" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

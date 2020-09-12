@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.bottomnavigation.BottomNavigationView android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bnvNavigator"
+    android:layout_gravity="bottom"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    app:menu="@menu/item_navigatorprincipal"
+    android:background="@android:color/white"
+    >
+</com.google.android.material.bottomnavigation.BottomNavigationView>

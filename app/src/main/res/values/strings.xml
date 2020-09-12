@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">AppMislentes</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="txtShop">Tienda</string>
+    <string name="txtTryOn">Try-On</string>
+    <string name="txtFavorites">Favoritos</string>
+    <string name="txAccount">Cuenta</string>
+    <string name="txtCar">Carrito</string>
+    <string name="txtEyes">Anteojos</string>
+    <string name="txtSun">Lentes de sol</string>
+    <string name="txtContac">Contacto</string>
+</resources>
