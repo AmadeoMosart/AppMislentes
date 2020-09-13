@@ -1,21 +1,26 @@
 package com.amadeo.appmislentes.Vista.ViewContenedorPrincipal.FragmenteTienda;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.Toast;
 
 import com.amadeo.appmislentes.R;
+import com.amadeo.appmislentes.Vista.ViewContenedorPrincipal.ListaTiendaragment;
 
 /**
  * A simple {@link Fragment} subclass.
  * Use the {@link AnteojoFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class AnteojoFragment extends Fragment {
+public class AnteojoFragment extends Fragment implements View.OnClickListener {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -25,6 +30,8 @@ public class AnteojoFragment extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+    FragmentTransaction transaction;
+    Fragment fragmentListaTienda;
 
     public AnteojoFragment() {
         // Required empty public constructor
@@ -61,6 +68,29 @@ public class AnteojoFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_anteojo, container, false);
+        final View view=inflater.inflate(R.layout.fragment_anteojo, container, false);
+        Button btnTiendaOmbreFA=view.findViewById(R.id.btnTiendaOmbreFA);
+        btnTiendaOmbreFA.setOnClickListener(this);
+        Button btnTiendaMujerFA=view.findViewById(R.id.btnTiendaMujerFA);
+        btnTiendaMujerFA.setOnClickListener(this);
+
+        fragmentListaTienda=new ListaTiendaragment();
+        return view;
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()){
+            case R.id.btnTiendaOmbreFA:
+                transaction=getActivity().getSupportFragmentManager().beginTransaction();
+                transaction.replace(R.id.frameLayoutPrincipal,fragmentListaTienda).commit();
+                Toast.makeText(getContext(), "Tienda Anteojos Hombre", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.btnTiendaMujerFA:
+                transaction=getActivity().getSupportFragmentManager().beginTransaction();
+                transaction.replace(R.id.frameLayoutPrincipal,fragmentListaTienda).commit();
+                Toast.makeText(getContext(), "Tienda Anteojos Mujer", Toast.LENGTH_SHORT).show();
+                break;
+        }
     }
 }

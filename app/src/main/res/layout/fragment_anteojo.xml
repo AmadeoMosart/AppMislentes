@@ -40,6 +40,7 @@
             android:orientation="horizontal">
 
             <Button
+                android:id="@+id/btnTiendaOmbreFA"
                 android:layout_width="@dimen/longitud150"
                 android:layout_height="wrap_content"
                 android:text="Tienda Hombre"/>
@@ -48,6 +49,7 @@
                 android:layout_width="32dp"
                 android:layout_height="match_parent"/>
             <Button
+                android:id="@+id/btnTiendaMujerFA"
                 android:layout_width="@dimen/longitud150"
                 android:layout_height="wrap_content"
                 android:text="Tienda Mujer" />

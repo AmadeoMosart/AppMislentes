@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cvListaTienda"
+    android:layout_width="match_parent"
+    android:layout_height="310dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imgFotoCard"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/longitud50"
+                android:layout_height="35dp"
+                android:layout_gravity="bottom"
+                android:src="@drawable/ic_add_circle" />
+
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/NombreGafacard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="Wright"
+                    android:textAlignment="center"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/longitud5"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/idcolor1card"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp" />
+
+                    <LinearLayout
+                        android:layout_width="5dp"
+                        android:layout_height="match_parent"></LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/idcolor2card"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="@dimen/longitud50"
+                android:layout_height="35dp"
+                android:layout_gravity="bottom"
+                android:src="@drawable/ic_favorite_border" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
