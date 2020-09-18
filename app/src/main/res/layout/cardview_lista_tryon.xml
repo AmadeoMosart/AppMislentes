@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/cvListaTienda"
+    android:id="@+id/cvListaTryOn"
     android:layout_width="match_parent"
-    android:layout_height="310dp">
+    android:layout_height="wrap_content">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -10,13 +10,13 @@
         android:orientation="vertical">
 
         <LinearLayout
-            android:id="@+id/btnBuscarTienda"
+            android:id="@+id/btnBuscarTryOn"
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:orientation="vertical">
 
             <ImageView
-                android:id="@+id/imgFotoCardTienda"
+                android:id="@+id/imgFotoCardTryOn"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
         </LinearLayout>
@@ -39,7 +39,7 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/NombreGafacardTienda"
+                    android:id="@+id/NombreGafacardTryOn"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center_horizontal"
@@ -54,7 +54,7 @@
                     android:gravity="center">
 
                     <ImageView
-                        android:id="@+id/idcolor1cardTienda"
+                        android:id="@+id/idcolor1cardTryOn"
                         android:layout_width="15dp"
                         android:layout_height="15dp" />
 
@@ -63,7 +63,7 @@
                         android:layout_height="match_parent"></LinearLayout>
 
                     <ImageView
-                        android:id="@+id/idcolor2cardTienda"
+                        android:id="@+id/idcolor2cardTryOn"
                         android:layout_width="15dp"
                         android:layout_height="15dp" />
                 </LinearLayout>

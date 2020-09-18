@@ -1,18 +1,222 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
     tools:context=".Vista.ViewContenedorPrincipal.FragmenPrincipal.TryOnFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Try-On"
-        android:textAlignment="center"
-        android:gravity="center_horizontal"
-        android:textSize="30sp"/>
+        android:layout_height="wrap_content">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_margin="@dimen/longitud10">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="Aquí le mostramos cómo probar los marcos en casa de forma gratuita"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/size20" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="@dimen/longitud10">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="► Elige 5 Fotogramas"
+                    android:textSize="@dimen/size15" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Responda nuestro cuestionario o pruébese los anteojos con la prueba virtual. Le enviaremos sus favoritos para que los pruebe gratis, sin necesidad de receta." />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="@dimen/longitud10"
+                android:layout_marginLeft="@dimen/longitud10">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="► Pasar 5 dias con ellos"
+                    android:textSize="@dimen/size15" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ellos vuelven a colocar los 5 marcos en la caja y los envían por correo con nuestra etiqueta de devolución prepaga" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+               android:layout_margin="@dimen/longitud10">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="► Compra lo que quieras, en cualquier momento"
+                    android:textSize="@dimen/size15" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Si encuentra una montura ganadora, compre un par nuevo con su receta en línea o en cualquier tienda minorista." />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/longitud10"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Empecemos"
+                    android:textSize="@dimen/size20" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:text="Para hacer rodar la pelota, aquí hay algunos de nuestros  favoritos."
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/longitud20">
+
+                <com.google.android.material.tabs.TabLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:tabIndicatorColor="@color/design_default_color_on_secondary">
+
+                    <com.google.android.material.tabs.TabItem
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Marcos de Hombre" />
+
+                    <com.google.android.material.tabs.TabItem
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Marcos de Mujer" />
+
+                </com.google.android.material.tabs.TabLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/longitud20"
+                android:layout_marginRight="@dimen/longitud20">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvListaTryOn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </androidx.recyclerview.widget.RecyclerView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/longitud10"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Estamos Aqui para Ayidarte"
+                        android:textSize="@dimen/size20" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_margin="@dimen/longitud20"
+                    android:gravity="bottom"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/longitud10"
+                        android:text="Visualice en cualquier cuadro con la prueba virtual"
+                        android:textSize="@dimen/size20" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/longitud20"
+                        android:text="Darle una Oportunidad" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_margin="@dimen/longitud20"
+                    android:gravity="bottom"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/longitud10"
+                        android:text="Visite una de nuestras tiendas y vea todos nuestros marcos IRL"
+                        android:textSize="@dimen/size20" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/longitud20"
+                        android:text="Buscar una Tienda" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>

@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="@android:color/white"
     android:orientation="vertical"
-    tools:context=".Vista.ViewContenedorPrincipal.ListaTiendaragment">
+    tools:context=".Vista.ViewContenedorPrincipal.FragmenteTienda.ListaLentesTienda.ListaTiendaragment">
     <!-- TODO: Update blank fragment layout -->
 <LinearLayout
     android:layout_width="match_parent"
@@ -37,6 +37,7 @@
             android:layout_width="65dp"
             android:layout_height="match_parent" />
         <ImageView
+            android:id="@+id/imgFiltro"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:src="@drawable/ic_apps"/>

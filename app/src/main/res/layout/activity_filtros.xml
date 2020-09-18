@@ -1,0 +1,795 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Vista.ViewFiltros.FiltrosActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/borde_filtro"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/clouseFiltro"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/cerrar" />
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Filtros"
+                    android:textSize="35sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ReSet"
+                android:textColor="@android:color/holo_blue_dark" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_margin="@dimen/longitud10">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Ancho de Marco"
+                            android:textSize="25sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/borde_filtro"
+                            android:text="Extra Estrecho" />
+
+                        <LinearLayout
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent" />
+
+                        <Button
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/borde_filtro"
+                            android:text="Extrecho" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/longitud10"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/borde_filtro"
+                            android:text="Medio" />
+
+                        <LinearLayout
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent" />
+
+                        <Button
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/borde_filtro"
+                            android:text="Amplio" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/longitud10"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/borde_filtro"
+                            android:text="Extra Amplio" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/longitud10"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:text="Forma"
+                            android:textAlignment="center"
+                            android:textSize="25sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:orientation="vertical"
+                                android:textAlignment="center">
+
+                                <ImageView
+                                    android:layout_width="120dp"
+                                    android:layout_height="80dp"
+                                    android:src="@drawable/prueba" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Cuadrado" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="30dp"
+                                android:layout_height="match_parent" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:orientation="vertical"
+                                android:textAlignment="center">
+
+                                <ImageView
+                                    android:layout_width="120dp"
+                                    android:layout_height="80dp"
+                                    android:src="@drawable/prueba" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Rectangulo" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:orientation="vertical"
+                                android:textAlignment="center">
+
+                                <ImageView
+                                    android:layout_width="120dp"
+                                    android:layout_height="80dp"
+                                    android:src="@drawable/prueba" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Redondo" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="30dp"
+                                android:layout_height="match_parent" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:orientation="vertical"
+                                android:textAlignment="center">
+
+                                <ImageView
+                                    android:layout_width="120dp"
+                                    android:layout_height="80dp"
+                                    android:src="@drawable/prueba" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Aviadora" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:orientation="vertical"
+                                android:textAlignment="center">
+
+                                <ImageView
+                                    android:layout_width="120dp"
+                                    android:layout_height="80dp"
+                                    android:src="@drawable/prueba" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Hojo de Gato" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/longitud10"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:text="Material"
+                            android:textAlignment="center"
+                            android:textSize="25sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:orientation="vertical"
+                                android:textAlignment="center">
+
+                                <ImageView
+                                    android:layout_width="120dp"
+                                    android:layout_height="80dp"
+                                    android:src="@drawable/prueba" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Acetato" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="30dp"
+                                android:layout_height="match_parent" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:orientation="vertical"
+                                android:textAlignment="center">
+
+                                <ImageView
+                                    android:layout_width="120dp"
+                                    android:layout_height="80dp"
+                                    android:src="@drawable/prueba" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Metal" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:orientation="vertical"
+                                android:textAlignment="center">
+
+                                <ImageView
+                                    android:layout_width="120dp"
+                                    android:layout_height="80dp"
+                                    android:src="@drawable/prueba" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Mixto" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/longitud10"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:text="Colores"
+                            android:textAlignment="center"
+                            android:textSize="25sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="@dimen/longitud150"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="@dimen/size20"
+                                    android:layout_height="@dimen/size20"
+                                    android:src="@drawable/circulo_negro" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Negro"
+                                    android:textSize="@dimen/size20" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="@dimen/longitud150"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="@dimen/size20"
+                                    android:layout_height="@dimen/size20"
+                                    android:src="@drawable/circulo_negro" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Tortuga"
+                                    android:textSize="@dimen/size20" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="@dimen/longitud150"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="@dimen/size20"
+                                    android:layout_height="@dimen/size20"
+                                    android:src="@drawable/circulo_negro" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Plateado"
+                                    android:textSize="@dimen/size20" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="@dimen/longitud150"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="@dimen/size20"
+                                    android:layout_height="@dimen/size20"
+                                    android:src="@drawable/circulo_negro" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Gris"
+                                    android:textSize="@dimen/size20" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="@dimen/longitud150"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="@dimen/size20"
+                                    android:layout_height="@dimen/size20"
+                                    android:src="@drawable/circulo_negro" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Azul"
+                                    android:textSize="@dimen/size20" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="@dimen/longitud150"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="@dimen/size20"
+                                    android:layout_height="@dimen/size20"
+                                    android:src="@drawable/circulo_negro" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Purpura"
+                                    android:textSize="@dimen/size20" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="@dimen/longitud150"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="@dimen/size20"
+                                    android:layout_height="@dimen/size20"
+                                    android:src="@drawable/circulo_negro" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Rojo"
+                                    android:textSize="@dimen/size20" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="@dimen/longitud150"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="@dimen/size20"
+                                    android:layout_height="@dimen/size20"
+                                    android:src="@drawable/circulo_negro" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Dos Tono"
+                                    android:textSize="@dimen/size20" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="@dimen/longitud150"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="@dimen/size20"
+                                    android:layout_height="@dimen/size20"
+                                    android:src="@drawable/circulo_negro" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Marron"
+                                    android:textSize="@dimen/size20" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="@dimen/longitud150"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="@dimen/size20"
+                                    android:layout_height="@dimen/size20"
+                                    android:src="@drawable/circulo_negro" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Dorado"
+                                    android:textSize="@dimen/size20" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="@dimen/longitud150"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="@dimen/size20"
+                                    android:layout_height="@dimen/size20"
+                                    android:src="@drawable/circulo_negro" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Blanco"
+                                    android:textSize="@dimen/size20" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="@dimen/longitud150"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="@dimen/size20"
+                                    android:layout_height="@dimen/size20"
+                                    android:src="@drawable/circulo_negro" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Verde"
+                                    android:textSize="@dimen/size20" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="@dimen/longitud150"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="@dimen/size20"
+                                    android:layout_height="@dimen/size20"
+                                    android:src="@drawable/circulo_negro" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Rozado"
+                                    android:textSize="@dimen/size20" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="@dimen/longitud150"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="@dimen/size20"
+                                    android:layout_height="@dimen/size20"
+                                    android:src="@drawable/circulo_negro" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Tortuga"
+                                    android:textSize="@dimen/size20" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/longitud20">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="Puente de la Nariz"
+                        android:textAlignment="center"
+                        android:textSize="25sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Ajustes de Pueste Bajo"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Almohadillas nasales más grandes, patillas ligeramente curvadas, ajuste ultra espacioso y lentes ajustados que brindan más comodidad a quienes tienen puentes bajos, caras anchas y pómulos altos." />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Estamdar"
+                            android:textSize="@dimen/size20" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Típicamente mejor para aquellos con una cara y pómulos de uso estrecho o promedio" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <Switch
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />}
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Disponible para pruebas en casa" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/longitud10"
+                            android:gravity="center">
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Mostrar 90 Marcos" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

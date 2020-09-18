@@ -1,25 +1,21 @@
-package com.amadeo.appmislentes.Vista.ViewContenedorPrincipal.FragmenPrincipal;
+package com.amadeo.appmislentes.Vista.ViewContenedorPrincipal.FragmentCuenta;
 
-import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentTransaction;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 
 import com.amadeo.appmislentes.R;
-import com.amadeo.appmislentes.Vista.ViewContenedorPrincipal.FragmentCuenta.MenuCuentaFragment;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link CuentaFragment#newInstance} factory method to
+ * Use the {@link MenuCuentaFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class CuentaFragment extends Fragment implements View.OnClickListener {
+public class MenuCuentaFragment extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -29,11 +25,8 @@ public class CuentaFragment extends Fragment implements View.OnClickListener {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
-    Button btnInitSecionCorreo;
-    FragmentTransaction transaction;
-    Fragment fragmentMenuCuenta;
 
-    public CuentaFragment() {
+    public MenuCuentaFragment() {
         // Required empty public constructor
     }
 
@@ -43,11 +36,11 @@ public class CuentaFragment extends Fragment implements View.OnClickListener {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment CuentaFragment.
+     * @return A new instance of fragment MenuCuentaFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static CuentaFragment newInstance(String param1, String param2) {
-        CuentaFragment fragment = new CuentaFragment();
+    public static MenuCuentaFragment newInstance(String param1, String param2) {
+        MenuCuentaFragment fragment = new MenuCuentaFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -68,23 +61,9 @@ public class CuentaFragment extends Fragment implements View.OnClickListener {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view=inflater.inflate(R.layout.fragment_cuenta, container, false);
-        btnInitSecionCorreo=view.findViewById(R.id.btnInitSecionCorreo);
-        btnInitSecionCorreo.setOnClickListener(this);
+       View view=inflater.inflate(R.layout.fragment_menu_cuenta, container, false);
 
-        fragmentMenuCuenta=new MenuCuentaFragment();
-        return  view;
-    }
 
-    @Override
-    public void onClick(View v) {
-        switch (v.getId()){
-            case R.id.btnInitSecionCorreo:
-                transaction=getActivity().getSupportFragmentManager().beginTransaction();
-                transaction.replace(R.id.frameLayoutPrincipal,fragmentMenuCuenta).commit();
-
-                break;
-        }
-
+       return view;
     }
 }

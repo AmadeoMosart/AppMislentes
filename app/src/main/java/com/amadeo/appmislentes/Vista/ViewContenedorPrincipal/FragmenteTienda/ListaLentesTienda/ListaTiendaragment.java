@@ -1,5 +1,7 @@
-package com.amadeo.appmislentes.Vista.ViewContenedorPrincipal;
+package com.amadeo.appmislentes.Vista.ViewContenedorPrincipal.FragmenteTienda.ListaLentesTienda;
 
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -17,6 +19,7 @@ import android.widget.Toast;
 import com.amadeo.appmislentes.Modelo.Tienda;
 import com.amadeo.appmislentes.R;
 import com.amadeo.appmislentes.Vista.ViewContenedorPrincipal.FragmenPrincipal.TiendaFragment;
+import com.amadeo.appmislentes.Vista.ViewFiltros.FiltrosActivity;
 import com.amadeo.appmislentes.adapter.RVListaTiendaAdapter;
 
 import java.util.ArrayList;
@@ -39,7 +42,7 @@ public class ListaTiendaragment extends Fragment implements View.OnClickListener
     private String mParam2;
 
     List<Tienda> listTienda = new ArrayList<Tienda>();
-    ImageView imgListaTienda;
+    ImageView imgListaTienda,imgFiltro;
     FragmentTransaction transaction;
     Fragment tiendaFragment;
     Switch switestado;
@@ -88,7 +91,11 @@ public class ListaTiendaragment extends Fragment implements View.OnClickListener
         imgListaTienda = view.findViewById(R.id.imgListaTienda);
         imgListaTienda.setOnClickListener(this);
 
+        imgFiltro= view.findViewById(R.id.imgFiltro);
+        imgFiltro.setOnClickListener(this);
+
         obtenerdato();
+
         //paso 01 Manager
         LinearLayoutManager llManager = new LinearLayoutManager(getActivity().getApplicationContext());
         llManager.setOrientation(RecyclerView.VERTICAL);
@@ -100,7 +107,9 @@ public class ListaTiendaragment extends Fragment implements View.OnClickListener
         RecyclerView rvListaTienda = view.findViewById(R.id.rvListaTienda);
         rvListaTienda.setLayoutManager(llManager);
         rvListaTienda.setAdapter(rvListaTiendaAdapter);
+
         tiendaFragment = new TiendaFragment();
+
         return view;
     }
 
@@ -144,6 +153,10 @@ public class ListaTiendaragment extends Fragment implements View.OnClickListener
                 } else {
                     Toast.makeText(getContext(), "No disponible", Toast.LENGTH_SHORT).show();
                 }
+                break;
+            case R.id.imgFiltro:
+                Intent intent=new Intent(v.getContext(), FiltrosActivity.class);
+                v.getContext().startActivity(intent);
                 break;
         }
     }

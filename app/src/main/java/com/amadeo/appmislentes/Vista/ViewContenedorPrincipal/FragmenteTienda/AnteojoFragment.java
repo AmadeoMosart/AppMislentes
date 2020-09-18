@@ -1,6 +1,5 @@
 package com.amadeo.appmislentes.Vista.ViewContenedorPrincipal.FragmenteTienda;
 
-import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -13,7 +12,7 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import com.amadeo.appmislentes.R;
-import com.amadeo.appmislentes.Vista.ViewContenedorPrincipal.ListaTiendaragment;
+import com.amadeo.appmislentes.Vista.ViewContenedorPrincipal.FragmenteTienda.ListaLentesTienda.ListaTiendaragment;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -84,6 +83,7 @@ public class AnteojoFragment extends Fragment implements View.OnClickListener {
             case R.id.btnTiendaOmbreFA:
                 transaction=getActivity().getSupportFragmentManager().beginTransaction();
                 transaction.replace(R.id.frameLayoutPrincipal,fragmentListaTienda).commit();
+
                 Toast.makeText(getContext(), "Tienda Anteojos Hombre", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.btnTiendaMujerFA:
