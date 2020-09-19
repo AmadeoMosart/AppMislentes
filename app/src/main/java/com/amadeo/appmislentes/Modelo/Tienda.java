@@ -1,27 +1,24 @@
 package com.amadeo.appmislentes.Modelo;
 
 public class Tienda {
-    private String titulo;
+    private String presio;
     private String urlFotouno;
-    private String urlFotodos;
-    private String urlFototres;
+
 
     public Tienda() {
     }
 
-    public Tienda(String titulo, String urlFotouno, String urlFotodos, String urlFototres) {
-        this.titulo = titulo;
+    public Tienda(String presio, String urlFotouno) {
+        this.presio = presio;
         this.urlFotouno = urlFotouno;
-        this.urlFotodos = urlFotodos;
-        this.urlFototres = urlFototres;
     }
 
-    public String getTitulo() {
-        return titulo;
+    public String getPresio() {
+        return presio;
     }
 
-    public void setTitulo(String titulo) {
-        this.titulo = titulo;
+    public void setPresio(String presio) {
+        this.presio = presio;
     }
 
     public String getUrlFotouno() {
@@ -30,21 +27,5 @@ public class Tienda {
 
     public void setUrlFotouno(String urlFotouno) {
         this.urlFotouno = urlFotouno;
-    }
-
-    public String getUrlFotodos() {
-        return urlFotodos;
-    }
-
-    public void setUrlFotodos(String urlFotodos) {
-        this.urlFotodos = urlFotodos;
-    }
-
-    public String getUrlFototres() {
-        return urlFototres;
-    }
-
-    public void setUrlFototres(String urlFototres) {
-        this.urlFototres = urlFototres;
     }
 }

@@ -25,12 +25,9 @@ public class LogoActivity extends AppCompatActivity {
         //Agregar Animacion
         Animation animation1= AnimationUtils.loadAnimation(this,R.anim.desplazamiento_arriba);
         Animation animation2= AnimationUtils.loadAnimation(this,R.anim.desplazamiento_abajoa);
-        TextView misb=findViewById(R.id.txvMisB);
-        TextView lentesb=findViewById(R.id.txvLentesB);
+
         ImageView LogoImageView=findViewById(R.id.LogoImageView);
 
-        misb.setAnimation(animation2);
-        lentesb.setAnimation(animation2);
         LogoImageView.setAnimation(animation1);
         new Handler().postDelayed(new Runnable() {
             @Override

@@ -36,12 +36,11 @@ public class RVListaTryOnAdapter extends RecyclerView.Adapter<RVListaTryOnAdapte
 
     @Override
     public void onBindViewHolder(@NonNull RVListaTryOnAdapter.ListaTryOnAdapterHolder holder, int position) {
-        final TryOn tryOn=lsTrayOn.get(position);
-
+        final TryOn tryOn = lsTrayOn.get(position);
+        holder.PrecioafacardTryOn.setText(tryOn.getPresio());
         //Para agregar imagenes usamos picasso
         Picasso.get().load(tryOn.getUrlFotouno()).into(holder.imgFotoCardTryOn);
-        Picasso.get().load(tryOn.getUrlFotodos()).into(holder.idcolor1cardTryOn);
-        Picasso.get().load(tryOn.getUrlFototres()).into(holder.idcolor2cardTryOn);
+
     }
 
     @Override
@@ -53,16 +52,15 @@ public class RVListaTryOnAdapter extends RecyclerView.Adapter<RVListaTryOnAdapte
 
         CardView cvListaTryOn;
         LinearLayout btnBuscarTryOn;
-        TextView NombreGafacardTryOn;
-        ImageView imgFotoCardTryOn, idcolor1cardTryOn, idcolor2cardTryOn;
+        TextView PrecioafacardTryOn;
+        ImageView imgFotoCardTryOn;
 
         public ListaTryOnAdapterHolder(@NonNull View itemView) {
             super(itemView);
             cvListaTryOn = itemView.findViewById(R.id.cvListaTryOn);
-            NombreGafacardTryOn = itemView.findViewById(R.id.NombreGafacardTryOn);
+            PrecioafacardTryOn = itemView.findViewById(R.id.PrecioafacardTryOn);
             imgFotoCardTryOn = itemView.findViewById(R.id.imgFotoCardTryOn);
-            idcolor1cardTryOn = itemView.findViewById(R.id.idcolor1cardTryOn);
-            idcolor2cardTryOn = itemView.findViewById(R.id.idcolor2cardTryOn);
+
             btnBuscarTryOn = itemView.findViewById(R.id.btnBuscarTryOn);
         }
     }

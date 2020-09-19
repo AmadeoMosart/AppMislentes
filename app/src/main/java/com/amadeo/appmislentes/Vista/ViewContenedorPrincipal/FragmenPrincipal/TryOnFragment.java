@@ -89,21 +89,13 @@ public class TryOnFragment extends Fragment {
     }
 
     private void obtenerdato() {
-            lsTrayOn.add(new TryOn("UDEMY",
-                    "https://i.warbycdn.com/s/c/9e664f8776d35b8bc472ef2780dee7d7247de1ba?quality=75&width=361",
-                    "https://i.warbycdn.com/-/f/fore5d60246e",
-                    "https://i.warbycdn.com/-/f/color-whiskey-tortoise-44ffbb63"));
-            lsTrayOn.add(new TryOn("UDEMY",
-                    "https://i.warbycdn.com/s/c/7815cfc3b97240eeca06e1142b9531746cae2c72?quality=75&width=361",
-                    "https://i.warbycdn.com/-/f/fore5d60246e",
-                    "https://i.warbycdn.com/-/f/color-whiskey-tortoise-44ffbb63"));
-            lsTrayOn.add(new TryOn("UDEMY",
-                    "https://i.warbycdn.com/s/c/53a9cc64fa7c7a8f7e0fc7b3732954dbe35cbdc4?quality=75&width=361",
-                    "https://i.warbycdn.com/-/f/fore5d60246e",
-                    "https://i.warbycdn.com/-/f/color-whiskey-tortoise-44ffbb63"));
-            lsTrayOn.add(new TryOn("UDEMY",
-                    "https://i.warbycdn.com/s/c/faf1f5ffde4ab4b80d8fbfa8a23b3cfeb9b2e1a8?quality=75&width=361",
-                    "https://i.warbycdn.com/-/f/fore5d60246e",
-                    "https://i.warbycdn.com/-/f/color-whiskey-tortoise-44ffbb63"));
+            lsTrayOn.add(new TryOn("S/210.00",
+                    "https://i.warbycdn.com/s/c/9e664f8776d35b8bc472ef2780dee7d7247de1ba?quality=75&width=361"));
+            lsTrayOn.add(new TryOn("S/100.00",
+                    "https://i.warbycdn.com/s/c/7815cfc3b97240eeca06e1142b9531746cae2c72?quality=75&width=361"));
+            lsTrayOn.add(new TryOn("S/60.00",
+                    "https://i.warbycdn.com/s/c/53a9cc64fa7c7a8f7e0fc7b3732954dbe35cbdc4?quality=75&width=361"));
+            lsTrayOn.add(new TryOn("S/820.00",
+                    "https://i.warbycdn.com/s/c/faf1f5ffde4ab4b80d8fbfa8a23b3cfeb9b2e1a8?quality=75&width=361"));
     }
 }

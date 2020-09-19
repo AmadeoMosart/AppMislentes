@@ -51,7 +51,9 @@ public class CuentaFragment extends Fragment implements View.OnClickListener {
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
+
         fragment.setArguments(args);
+
         return fragment;
     }
 
@@ -69,6 +71,7 @@ public class CuentaFragment extends Fragment implements View.OnClickListener {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view=inflater.inflate(R.layout.fragment_cuenta, container, false);
+
         btnInitSecionCorreo=view.findViewById(R.id.btnInitSecionCorreo);
         btnInitSecionCorreo.setOnClickListener(this);
 
@@ -80,6 +83,7 @@ public class CuentaFragment extends Fragment implements View.OnClickListener {
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.btnInitSecionCorreo:
+
                 transaction=getActivity().getSupportFragmentManager().beginTransaction();
                 transaction.replace(R.id.frameLayoutPrincipal,fragmentMenuCuenta).commit();
 

@@ -41,12 +41,11 @@ public class RVListaTiendaAdapter extends RecyclerView.Adapter<RVListaTiendaAdap
     public void onBindViewHolder(@NonNull ListaTiendaAdapterHolder holder, int position) {
          final Tienda tienda=lsTienda.get(position);
 
-        holder.NombreGafacardTienda.setText(tienda.getTitulo());
+        holder.PrecioGafacardTienda.setText(tienda.getPresio());
 
         //Para agregar imagenes usamos picasso
         Picasso.get().load(tienda.getUrlFotouno()).into(holder.imgFotoCardTienda);
-        Picasso.get().load(tienda.getUrlFotodos()).into(holder.idcolor1cardTienda);
-        Picasso.get().load(tienda.getUrlFototres()).into(holder.idcolor2cardTienda);
+
 
         holder.btnBuscarTienda.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -66,16 +65,15 @@ public class RVListaTiendaAdapter extends RecyclerView.Adapter<RVListaTiendaAdap
 
         CardView cvListaTienda;
         LinearLayout btnBuscarTienda;
-        TextView NombreGafacardTienda;
-        ImageView imgFotoCardTienda,idcolor1cardTienda,idcolor2cardTienda;
+        TextView PrecioGafacardTienda;
+        ImageView imgFotoCardTienda;
 
         public ListaTiendaAdapterHolder(@NonNull View itemView) {
             super(itemView);
             cvListaTienda= itemView.findViewById(R.id.cvListaTienda);
-            NombreGafacardTienda= itemView.findViewById(R.id.NombreGafacardTienda);
+            PrecioGafacardTienda= itemView.findViewById(R.id.PrecioGafacardTienda);
             imgFotoCardTienda= itemView.findViewById(R.id.imgFotoCardTienda);
-            idcolor1cardTienda= itemView.findViewById(R.id.idcolor1cardTienda);
-            idcolor2cardTienda= itemView.findViewById(R.id.idcolor2cardTienda);
+
             btnBuscarTienda= itemView.findViewById(R.id.btnBuscarTienda);
         }
     }

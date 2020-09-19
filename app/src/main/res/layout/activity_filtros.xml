@@ -22,8 +22,7 @@
             <ImageView
                 android:id="@+id/clouseFiltro"
                 android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:src="@drawable/cerrar" />
+                android:layout_height="30dp" />
 
             <LinearLayout
                 android:layout_width="300dp"
@@ -49,8 +48,8 @@
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_margin="@dimen/longitud10">
+            android:layout_margin="@dimen/longitud10"
+            android:layout_marginTop="10dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -177,8 +176,7 @@
 
                                 <ImageView
                                     android:layout_width="120dp"
-                                    android:layout_height="80dp"
-                                    android:src="@drawable/prueba" />
+                                    android:layout_height="80dp" />
 
                                 <TextView
                                     android:layout_width="wrap_content"
@@ -199,8 +197,7 @@
 
                                 <ImageView
                                     android:layout_width="120dp"
-                                    android:layout_height="80dp"
-                                    android:src="@drawable/prueba" />
+                                    android:layout_height="80dp" />
 
                                 <TextView
                                     android:layout_width="wrap_content"
@@ -224,8 +221,7 @@
 
                                 <ImageView
                                     android:layout_width="120dp"
-                                    android:layout_height="80dp"
-                                    android:src="@drawable/prueba" />
+                                    android:layout_height="80dp" />
 
                                 <TextView
                                     android:layout_width="wrap_content"
@@ -246,8 +242,7 @@
 
                                 <ImageView
                                     android:layout_width="120dp"
-                                    android:layout_height="80dp"
-                                    android:src="@drawable/prueba" />
+                                    android:layout_height="80dp" />
 
                                 <TextView
                                     android:layout_width="wrap_content"
@@ -270,8 +265,7 @@
 
                                 <ImageView
                                     android:layout_width="120dp"
-                                    android:layout_height="80dp"
-                                    android:src="@drawable/prueba" />
+                                    android:layout_height="80dp" />
 
                                 <TextView
                                     android:layout_width="wrap_content"
@@ -323,8 +317,7 @@
 
                                 <ImageView
                                     android:layout_width="120dp"
-                                    android:layout_height="80dp"
-                                    android:src="@drawable/prueba" />
+                                    android:layout_height="80dp" />
 
                                 <TextView
                                     android:layout_width="wrap_content"
@@ -345,8 +338,7 @@
 
                                 <ImageView
                                     android:layout_width="120dp"
-                                    android:layout_height="80dp"
-                                    android:src="@drawable/prueba" />
+                                    android:layout_height="80dp" />
 
                                 <TextView
                                     android:layout_width="wrap_content"
@@ -369,8 +361,7 @@
 
                                 <ImageView
                                     android:layout_width="120dp"
-                                    android:layout_height="80dp"
-                                    android:src="@drawable/prueba" />
+                                    android:layout_height="80dp" />
 
                                 <TextView
                                     android:layout_width="wrap_content"
@@ -409,6 +400,7 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/longitud20"
                             android:gravity="center"
                             android:orientation="horizontal">
 
@@ -419,8 +411,7 @@
 
                                 <ImageView
                                     android:layout_width="@dimen/size20"
-                                    android:layout_height="@dimen/size20"
-                                    android:src="@drawable/circulo_negro" />
+                                    android:layout_height="@dimen/size20" />
 
                                 <TextView
                                     android:layout_width="wrap_content"
@@ -436,8 +427,7 @@
 
                                 <ImageView
                                     android:layout_width="@dimen/size20"
-                                    android:layout_height="@dimen/size20"
-                                    android:src="@drawable/circulo_negro" />
+                                    android:layout_height="@dimen/size20" />
 
                                 <TextView
                                     android:layout_width="wrap_content"
@@ -450,6 +440,7 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/longitud20"
                             android:gravity="center"
                             android:orientation="horizontal">
 
@@ -460,8 +451,7 @@
 
                                 <ImageView
                                     android:layout_width="@dimen/size20"
-                                    android:layout_height="@dimen/size20"
-                                    android:src="@drawable/circulo_negro" />
+                                    android:layout_height="@dimen/size20" />
 
                                 <TextView
                                     android:layout_width="wrap_content"
@@ -477,8 +467,7 @@
 
                                 <ImageView
                                     android:layout_width="@dimen/size20"
-                                    android:layout_height="@dimen/size20"
-                                    android:src="@drawable/circulo_negro" />
+                                    android:layout_height="@dimen/size20" />
 
                                 <TextView
                                     android:layout_width="wrap_content"
@@ -491,6 +480,7 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/longitud20"
                             android:gravity="center"
                             android:orientation="horizontal">
 
@@ -501,8 +491,7 @@
 
                                 <ImageView
                                     android:layout_width="@dimen/size20"
-                                    android:layout_height="@dimen/size20"
-                                    android:src="@drawable/circulo_negro" />
+                                    android:layout_height="@dimen/size20" />
 
                                 <TextView
                                     android:layout_width="wrap_content"
@@ -518,8 +507,7 @@
 
                                 <ImageView
                                     android:layout_width="@dimen/size20"
-                                    android:layout_height="@dimen/size20"
-                                    android:src="@drawable/circulo_negro" />
+                                    android:layout_height="@dimen/size20" />
 
                                 <TextView
                                     android:layout_width="wrap_content"
@@ -532,6 +520,7 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/longitud20"
                             android:gravity="center"
                             android:orientation="horizontal">
 
@@ -542,8 +531,7 @@
 
                                 <ImageView
                                     android:layout_width="@dimen/size20"
-                                    android:layout_height="@dimen/size20"
-                                    android:src="@drawable/circulo_negro" />
+                                    android:layout_height="@dimen/size20" />
 
                                 <TextView
                                     android:layout_width="wrap_content"
@@ -559,8 +547,7 @@
 
                                 <ImageView
                                     android:layout_width="@dimen/size20"
-                                    android:layout_height="@dimen/size20"
-                                    android:src="@drawable/circulo_negro" />
+                                    android:layout_height="@dimen/size20" />
 
                                 <TextView
                                     android:layout_width="wrap_content"
@@ -573,6 +560,7 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/longitud20"
                             android:gravity="center"
                             android:orientation="horizontal">
 
@@ -583,8 +571,7 @@
 
                                 <ImageView
                                     android:layout_width="@dimen/size20"
-                                    android:layout_height="@dimen/size20"
-                                    android:src="@drawable/circulo_negro" />
+                                    android:layout_height="@dimen/size20" />
 
                                 <TextView
                                     android:layout_width="wrap_content"
@@ -600,8 +587,7 @@
 
                                 <ImageView
                                     android:layout_width="@dimen/size20"
-                                    android:layout_height="@dimen/size20"
-                                    android:src="@drawable/circulo_negro" />
+                                    android:layout_height="@dimen/size20" />
 
                                 <TextView
                                     android:layout_width="wrap_content"
@@ -614,6 +600,7 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/longitud20"
                             android:gravity="center"
                             android:orientation="horizontal">
 
@@ -624,8 +611,7 @@
 
                                 <ImageView
                                     android:layout_width="@dimen/size20"
-                                    android:layout_height="@dimen/size20"
-                                    android:src="@drawable/circulo_negro" />
+                                    android:layout_height="@dimen/size20" />
 
                                 <TextView
                                     android:layout_width="wrap_content"
@@ -641,8 +627,7 @@
 
                                 <ImageView
                                     android:layout_width="@dimen/size20"
-                                    android:layout_height="@dimen/size20"
-                                    android:src="@drawable/circulo_negro" />
+                                    android:layout_height="@dimen/size20" />
 
                                 <TextView
                                     android:layout_width="wrap_content"
@@ -655,6 +640,7 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/longitud20"
                             android:gravity="center"
                             android:orientation="horizontal">
 
@@ -665,8 +651,7 @@
 
                                 <ImageView
                                     android:layout_width="@dimen/size20"
-                                    android:layout_height="@dimen/size20"
-                                    android:src="@drawable/circulo_negro" />
+                                    android:layout_height="@dimen/size20" />
 
                                 <TextView
                                     android:layout_width="wrap_content"
@@ -682,8 +667,7 @@
 
                                 <ImageView
                                     android:layout_width="@dimen/size20"
-                                    android:layout_height="@dimen/size20"
-                                    android:src="@drawable/circulo_negro" />
+                                    android:layout_height="@dimen/size20" />
 
                                 <TextView
                                     android:layout_width="wrap_content"
@@ -765,6 +749,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal">
+
                             <Switch
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content" />}

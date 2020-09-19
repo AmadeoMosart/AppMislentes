@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Vista.ViewBienvenida.LogoActivity"
-    android:background="@android:color/black">
+    android:background="@drawable/fondo_inicio">
 
     <ImageView
         android:id="@+id/LogoImageView"
@@ -21,32 +21,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logooptica" />
+        app:srcCompat="@drawable/logotipo_inicio" />
 
-    <TextView
-        android:id="@+id/txvLentesB"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="108dp"
-        android:fontFamily="@font/abril_fatface"
-        android:text="Lentes"
-        android:textColor="@android:color/white"
-        android:textSize="50sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/txvMisB"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"
-        android:fontFamily="@font/abril_fatface"
-        android:text="Mis"
-        android:textColor="@android:color/white"
-        android:textSize="35sp"
-        app:layout_constraintBottom_toTopOf="@+id/txvLentesB"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent" />
+    
 </androidx.constraintlayout.widget.ConstraintLayout>

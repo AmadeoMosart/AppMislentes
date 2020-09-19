@@ -1,24 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <item android:id="@+id/item_Shop"
-        android:icon="@drawable/ic_shopping_basket"
-        android:title="@string/txtShop"
-        />
-    <item android:id="@+id/item_try_On"
-        android:icon="@drawable/ic_unarchive"
-        android:title="@string/txtTryOn"
-        />
-    <item android:id="@+id/item_favorites"
-        android:icon="@drawable/ic_favorite_border"
-        android:title="@string/txtFavorites"
-        />
-    <item android:id="@+id/item_Account"
-        android:icon="@drawable/ic_person"
-        android:title="@string/txAccount"
-        />
-    <item android:id="@+id/item_car"
-        android:icon="@drawable/ic_hopping_cart"
-        android:title="@string/txtCar"
-        />
+    <item
+        android:id="@+id/item_Shop"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_shopping_basket"
+        android:title="@string/txtShop" />
+    <item
+        android:id="@+id/item_try_On"
+        android:enabled="true"
+        android:title="@string/txtTryOn" />
+    <item
+        android:id="@+id/item_favorites"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_favorite_border"
+        android:title="@string/txtFavorites" />
+    <item
+        android:id="@+id/item_Account"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_person"
+        android:title="@string/txAccount" />
+    <item
+        android:id="@+id/item_car"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_shopping_cart"
+        android:title="@string/txtCar" />
 </menu>

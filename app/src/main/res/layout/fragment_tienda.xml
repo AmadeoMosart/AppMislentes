@@ -36,16 +36,17 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@android:color/transparent"
-                    android:fontFamily="@font/alike"
+                    android:fontFamily="@font/amiko_semibold"
                     android:gravity="center_horizontal"
                     android:text="@string/txtEyes"
                     android:textAlignment="center"
-                    android:textSize="25sp" />
+                    android:textColor="@color/colorsecundario"
+                    android:textSize="20sp" />
                 <LinearLayout
                     android:id="@+id/anteojogone"
                     android:layout_width="@dimen/longitud50"
                     android:layout_height="@dimen/longitud5"
-                    android:background="@color/colorPrimary"
+                    android:background="@android:color/black"
                     android:orientation="horizontal"
                     />
             </LinearLayout>
@@ -62,16 +63,17 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@android:color/transparent"
-                    android:fontFamily="@font/alike"
+                    android:fontFamily="@font/amiko_semibold"
                     android:gravity="center_horizontal"
                     android:text="@string/txtSun"
                     android:textAlignment="center"
-                    android:textSize="25sp" />
+                    android:textColor="@color/colorsecundario"
+                    android:textSize="20sp" />
                 <LinearLayout
                     android:id="@+id/solgone"
                     android:layout_width="@dimen/longitud50"
                     android:layout_height="@dimen/longitud5"
-                    android:background="@color/colorPrimary"
+                    android:background="@android:color/black"
                     android:visibility="gone"
                     android:orientation="horizontal" />
             </LinearLayout>
@@ -87,16 +89,17 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@android:color/transparent"
-                    android:fontFamily="@font/alike"
+                    android:fontFamily="@font/amiko_semibold"
                     android:gravity="center_horizontal"
                     android:text="@string/txtContac"
                     android:textAlignment="center"
-                    android:textSize="25sp" />
+                    android:textColor="@color/colorsecundario"
+                    android:textSize="20sp" />
                 <LinearLayout
                     android:id="@+id/gonecontacto"
                     android:layout_width="@dimen/longitud50"
                     android:layout_height="@dimen/longitud5"
-                    android:background="@color/colorPrimary"
+                    android:background="@android:color/black"
                     android:orientation="horizontal"
                     android:visibility="gone"/>
 

@@ -63,6 +63,7 @@
                 android:orientation="vertical">
                 <!-- Ordenes -->
                 <LinearLayout
+                    android:id="@+id/lnOrdenesCuenta"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/longitud10"
@@ -71,21 +72,22 @@
                     <ImageView
                         android:layout_width="@dimen/longitud50"
                         android:layout_height="@dimen/longitud50"
-                        android:src="@drawable/bolsa_compra" />
+                      />
 
                     <LinearLayout
                         android:layout_width="300dp"
                         android:layout_height="match_parent"
-                        android:gravity="center_vertical"
+
                         android:textAlignment="center"
                         tools:ignore="RtlCompat">
 
                         <TextView
+                            android:gravity="center"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:layout_height="62dp"
                             android:layout_marginLeft="@dimen/longitud5"
                             android:text="Ordenes"
-                            android:textSize="25dp" />
+                            android:textSize="25dp"/>
                     </LinearLayout>
 
                     <LinearLayout
@@ -96,13 +98,14 @@
                         <ImageView
                             android:layout_width="25dp"
                             android:layout_height="25dp"
-                            android:src="@drawable/proximo" />
+                            />
                     </LinearLayout>
                 </LinearLayout>
                 <!-- Fin ordenes -->
 
                 <!-- Prescripcion -->
                 <LinearLayout
+                    android:id="@+id/lnPrescripcionCuenta"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/longitud10"
@@ -111,7 +114,7 @@
                     <ImageView
                         android:layout_width="@dimen/longitud50"
                         android:layout_height="@dimen/longitud50"
-                        android:src="@drawable/informe_medico" />
+                        />
 
                     <LinearLayout
                         android:layout_width="300dp"
@@ -121,8 +124,9 @@
                         tools:ignore="RtlCompat">
 
                         <TextView
+                            android:gravity="center"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:layout_height="62dp"
                             android:layout_marginLeft="@dimen/longitud5"
                             android:text="Prescripcion"
                             android:textSize="25dp" />
@@ -136,13 +140,14 @@
                         <ImageView
                             android:layout_width="25dp"
                             android:layout_height="25dp"
-                            android:src="@drawable/proximo" />
+                            />
                     </LinearLayout>
                 </LinearLayout>
                 <!-- Fin Prescripcion -->
 
                 <!-- Ubicacion tienda -->
                 <LinearLayout
+                    android:id="@+id/lnUbicacionTiendaCuenta"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/longitud10"
@@ -151,7 +156,7 @@
                     <ImageView
                         android:layout_width="@dimen/longitud50"
                         android:layout_height="@dimen/longitud50"
-                        android:src="@drawable/alfiler" />
+                        />
 
                     <LinearLayout
                         android:layout_width="300dp"
@@ -161,6 +166,7 @@
                         tools:ignore="RtlCompat">
 
                         <TextView
+
                             android:layout_width="wrap_content"
                             android:layout_height="62dp"
                             android:layout_marginLeft="@dimen/longitud5"
@@ -176,13 +182,14 @@
                         <ImageView
                             android:layout_width="25dp"
                             android:layout_height="25dp"
-                            android:src="@drawable/proximo" />
+                           />
                     </LinearLayout>
                 </LinearLayout>
                 <!-- Fin Ubicacion tienda -->
 
                 <!-- Configuracion perfil -->
                 <LinearLayout
+                    android:id="@+id/lnPrefislCuenta"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/longitud10"
@@ -191,7 +198,7 @@
                     <ImageView
                         android:layout_width="@dimen/longitud50"
                         android:layout_height="@dimen/longitud50"
-                        android:src="@drawable/aplicacion" />
+                       />
 
                     <LinearLayout
                         android:layout_width="300dp"
@@ -201,8 +208,9 @@
                         tools:ignore="RtlCompat">
 
                         <TextView
+                            android:gravity="center"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:layout_height="62dp"
                             android:layout_marginLeft="@dimen/longitud5"
                             android:text="Configuración de perfil"
                             android:textSize="25dp" />
@@ -216,13 +224,14 @@
                         <ImageView
                             android:layout_width="25dp"
                             android:layout_height="25dp"
-                            android:src="@drawable/proximo" />
+                          />
                     </LinearLayout>
                 </LinearLayout>
                 <!-- Fin Configuracion perfil-->
 
                 <!-- FAQ -->
                 <LinearLayout
+                    android:id="@+id/lnFAQCuenta"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/longitud10"
@@ -231,7 +240,7 @@
                     <ImageView
                         android:layout_width="@dimen/longitud50"
                         android:layout_height="@dimen/longitud50"
-                        android:src="@drawable/pregunta" />
+                       />
 
                     <LinearLayout
                         android:layout_width="300dp"
@@ -241,8 +250,9 @@
                         tools:ignore="RtlCompat">
 
                         <TextView
+                            android:gravity="center"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:layout_height="62dp"
                             android:layout_marginLeft="@dimen/longitud5"
                             android:text="FAQ"
                             android:textSize="25dp" />
@@ -256,13 +266,14 @@
                         <ImageView
                             android:layout_width="25dp"
                             android:layout_height="25dp"
-                            android:src="@drawable/proximo" />
+                        />
                     </LinearLayout>
                 </LinearLayout>
                 <!-- Fin FAQ-->
 
                 <!-- Notificaciones -->
                 <LinearLayout
+                    android:id="@+id/lnNotificacionCuenta"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/longitud10"
@@ -271,7 +282,7 @@
                     <ImageView
                         android:layout_width="@dimen/longitud50"
                         android:layout_height="@dimen/longitud50"
-                        android:src="@drawable/enviar" />
+                      />
 
                     <LinearLayout
                         android:layout_width="300dp"
@@ -281,8 +292,9 @@
                         tools:ignore="RtlCompat">
 
                         <TextView
+                            android:gravity="center"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:layout_height="62dp"
                             android:layout_marginLeft="@dimen/longitud5"
                             android:text="Notificaciones"
                             android:textSize="25dp" />
@@ -296,12 +308,13 @@
                         <ImageView
                             android:layout_width="25dp"
                             android:layout_height="25dp"
-                            android:src="@drawable/proximo" />
+                            />
                     </LinearLayout>
                 </LinearLayout>
                 <!-- Notificaciones-->
                 <!-- Reseña -->
                 <LinearLayout
+                    android:id="@+id/lnReseñaCuenta"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/longitud10"
@@ -310,7 +323,7 @@
                     <ImageView
                         android:layout_width="@dimen/longitud50"
                         android:layout_height="@dimen/longitud50"
-                        android:src="@drawable/boligrafo" />
+                       />
 
                     <LinearLayout
                         android:layout_width="300dp"
@@ -320,8 +333,9 @@
                         tools:ignore="RtlCompat">
 
                         <TextView
+                            android:gravity="center"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:layout_height="62dp"
                             android:layout_marginLeft="@dimen/longitud5"
                             android:text="Escribe una reseña"
                             android:textSize="25dp" />
@@ -335,7 +349,7 @@
                         <ImageView
                             android:layout_width="25dp"
                             android:layout_height="25dp"
-                            android:src="@drawable/proximo" />
+                            />
                     </LinearLayout>
 
                 </LinearLayout>
@@ -358,7 +372,8 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/longitud20"
                     android:textAlignment="center"
-                    android:text="Estamos disponibles por telefono +51 946371891 Lunes - Viernes 9 am - 9 pm y por chat todos los dias 9 am - 9 pm ET." />
+                    android:text="Estamos disponibles por telefono +51 946371891 Lunes - Viernes 9 am - 9 pm y por chat todos los dias 9 am - 9 pm ET."
+                    android:gravity="center_horizontal" />
             </LinearLayout>
         </LinearLayout>
     </ScrollView>
