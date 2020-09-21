@@ -1,34 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/cl"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
     android:gravity="center"
+    android:orientation="vertical"
     tools:context=".Vista.ViewContenedorPrincipal.FragmenPrincipal.TiendaFragment">
-
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-       >
+        android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="30dp"
             android:layout_gravity="center"
-            android:gravity="center">
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:orientation="horizontal">
 
             <LinearLayout
                 android:layout_width="125dp"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:gravity="center">
+                android:gravity="center"
+                android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/item_anteojos"
@@ -42,20 +40,20 @@
                     android:textAlignment="center"
                     android:textColor="@color/colorsecundario"
                     android:textSize="20sp" />
+
                 <LinearLayout
                     android:id="@+id/anteojogone"
                     android:layout_width="@dimen/longitud50"
                     android:layout_height="@dimen/longitud5"
                     android:background="@android:color/black"
-                    android:orientation="horizontal"
-                    />
+                    android:orientation="horizontal" />
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
                 android:gravity="center"
-                >
+                android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/item_sol"
@@ -69,19 +67,21 @@
                     android:textAlignment="center"
                     android:textColor="@color/colorsecundario"
                     android:textSize="20sp" />
+
                 <LinearLayout
                     android:id="@+id/solgone"
                     android:layout_width="@dimen/longitud50"
                     android:layout_height="@dimen/longitud5"
                     android:background="@android:color/black"
-                    android:visibility="gone"
-                    android:orientation="horizontal" />
+                    android:orientation="horizontal"
+                    android:visibility="gone" />
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="125dp"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:gravity="center">
+                android:gravity="center"
+                android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/item_contacto"
@@ -95,26 +95,28 @@
                     android:textAlignment="center"
                     android:textColor="@color/colorsecundario"
                     android:textSize="20sp" />
+
                 <LinearLayout
                     android:id="@+id/gonecontacto"
                     android:layout_width="@dimen/longitud50"
                     android:layout_height="@dimen/longitud5"
                     android:background="@android:color/black"
                     android:orientation="horizontal"
-                    android:visibility="gone"/>
+                    android:visibility="gone" />
 
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
+
     <FrameLayout
         android:id="@+id/frameLayoutTienda"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:animateLayoutChanges="true"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="-5dp"
-        tools:layout_editor_absoluteY="64dp"
-        tools:ignore="MissingConstraints">
-    </FrameLayout>
+        tools:layout_editor_absoluteY="64dp"></FrameLayout>
+
 
 </LinearLayout>

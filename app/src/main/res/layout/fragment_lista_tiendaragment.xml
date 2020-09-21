@@ -33,7 +33,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Anteojos"
-                    android:textColor="@color/colorPrimary"
+                    android:textColor="@color/colorprimario"
                     android:textSize="30dp" />
             </LinearLayout>
 

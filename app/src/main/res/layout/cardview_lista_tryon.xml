@@ -33,18 +33,50 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:gravity="center">
-                <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_margin="@dimen/longitud10"/>
-                <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_margin="@dimen/longitud10"/>
-                <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_margin="@dimen/longitud10"/>
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="@dimen/longitud10"
+                        android:src="@drawable/caritafeliz" />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="@dimen/longitud10"
+                        android:src="@drawable/caratriste"
+                        android:visibility="invisible" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="@dimen/longitud10"
+                        android:src="@drawable/corazonb"
+                        android:visibility="invisible" />
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="@dimen/longitud10"
+                        android:src="@drawable/corazon" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="@dimen/longitud10"
+                        android:src="@drawable/caritoms" />
+                </RelativeLayout>
             </LinearLayout>
         </LinearLayout>
 

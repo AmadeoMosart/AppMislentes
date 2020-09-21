@@ -80,6 +80,7 @@ public class ListaTiendaragment extends Fragment implements View.OnClickListener
         imgFiltro= view.findViewById(R.id.imgFiltro);
         imgFiltro.setOnClickListener(this);
 
+
         edtResultado=view.findViewById(R.id.edtResultado);
 
         obtenerdato();
@@ -132,6 +133,8 @@ public class ListaTiendaragment extends Fragment implements View.OnClickListener
                 Intent intent=new Intent(v.getContext(), FiltrosActivity.class);
                 v.getContext().startActivity(intent);
                 break;
+
+
         }
     }
 }

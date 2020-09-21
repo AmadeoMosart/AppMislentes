@@ -3,7 +3,218 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".Vista.ViewContenedorPrincipal.FragmentCuenta.ViewMenuCuenta.OdenesFragment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="@dimen/longitud20"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgListaTienda"
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/atras"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/edtResultado"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Anteojos"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorprimario"
+                        android:textSize="30dp"
+                        android:gravity="center_horizontal" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="@dimen/longitud20"
+                android:layout_marginLeft="@dimen/longitud20">
+
+                <!-- Recojo -->
+                <LinearLayout
+                    android:id="@+id/lnOrdenesRecojoCuenta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/longitud10"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/longitud50"
+                        android:layout_height="@dimen/longitud50"
+                        android:src="@drawable/carritomas"/>
+
+                    <LinearLayout
+                        android:layout_width="300dp"
+                        android:layout_height="match_parent"
+
+                        android:textAlignment="center"
+                        tools:ignore="RtlCompat">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="62dp"
+                            android:layout_marginLeft="@dimen/longitud5"
+                            android:fontFamily="@font/amiko"
+                            android:gravity="center"
+                            android:text="Ordenes por Recojo"
+                            android:textSize="25dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp" />
+                    </LinearLayout>
+                </LinearLayout>
+                <!-- Fin Recojo -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="@dimen/longitud10"
+                    android:background="@color/colorPrimary"/>
+                <!-- Delivery -->
+                <LinearLayout
+                    android:id="@+id/lnOrdenesDeliveryCuenta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/longitud10"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/longitud50"
+                        android:layout_height="@dimen/longitud50"
+                        android:src="@drawable/moto"/>
+
+                    <LinearLayout
+                        android:layout_width="300dp"
+                        android:layout_height="match_parent"
+
+                        android:textAlignment="center"
+                        tools:ignore="RtlCompat">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="62dp"
+                            android:layout_marginLeft="@dimen/longitud5"
+                            android:fontFamily="@font/amiko"
+                            android:gravity="center"
+                            android:text="Ordenes por Delivery"
+                            android:textSize="25dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp" />
+                    </LinearLayout>
+                </LinearLayout>
+                <!-- Fin Delivery -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="@dimen/longitud10"
+                    android:background="@color/colorPrimary"/>
+                <!-- Prueba -->
+                <LinearLayout
+                    android:id="@+id/lnOrdenesPruebaCuenta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/longitud10"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/longitud50"
+                        android:layout_height="@dimen/longitud50"
+                        android:src="@drawable/moto"/>
+
+                    <LinearLayout
+                        android:layout_width="300dp"
+                        android:layout_height="match_parent"
+
+                        android:textAlignment="center"
+                        tools:ignore="RtlCompat">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="62dp"
+                            android:layout_marginLeft="@dimen/longitud5"
+                            android:fontFamily="@font/amiko"
+                            android:gravity="center"
+                            android:text="Ordenes por Prueba"
+                            android:textSize="25dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp" />
+                    </LinearLayout>
+                </LinearLayout>
+                <!-- Fin Prueba -->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/longitud50"
+                android:gravity="bottom"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/amiko_semibold"
+                    android:gravity="center_horizontal"
+                    android:text="Necesitas Ayuda?"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorprimario"
+                    android:textSize="@dimen/size20" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/longitud20"
+                    android:fontFamily="@font/amiko"
+                    android:gravity="center_horizontal"
+                    android:text="Estamos disponibles por telefono +51 946371891 Lunes - Viernes 9 am - 9 pm y por chat todos los dias 9 am - 9 pm ET."
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
 
 
 </LinearLayout>

@@ -51,19 +51,24 @@
             android:orientation="vertical">
 
             <TextView
+                android:layout_margin="@dimen/longitud10"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
                 android:text="Favoritos"
+                android:textColor="@color/colorprimario"
+                android:fontFamily="@font/amiko_semibold"
                 android:textAlignment="center"
-                android:textSize="@dimen/size20" />
+                android:textSize="30dp" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
                 android:text="Toca un marco para probarlo virtual"
-                android:textAlignment="center" />
+                android:textAlignment="center"
+                android:fontFamily="@font/amiko_semibold"
+                android:textSize="@dimen/size15"/>
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rvListaFavorito"

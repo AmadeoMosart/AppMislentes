@@ -89,8 +89,8 @@ public class TiendaFragment extends Fragment implements View.OnClickListener {
         solgone = view.findViewById(R.id.solgone);
         layout = view.findViewById(R.id.cl);
 
-        // drwable imagenes  de fondo de pantalla
-        //layout.setBackgroundResource(R.drawable.gafas);
+        //drwable imagenes  de fondo de pantalla
+        layout.setBackgroundResource(R.drawable.gafas);
 
         fragmentContacto = new LentesContactoFragment();
         fragmentAnteojo = new AnteojoFragment();
@@ -114,7 +114,7 @@ public class TiendaFragment extends Fragment implements View.OnClickListener {
                 solgone.setVisibility(View.INVISIBLE);
 
                 // drwable imagenes  de fondo de pantalla
-                //layout.setBackgroundResource(R.drawable.contacimg);
+                layout.setBackgroundResource(R.drawable.gafascontacto);
                 break;
             case R.id.item_anteojos:
                 transaction = getActivity().getSupportFragmentManager().beginTransaction();
@@ -125,7 +125,7 @@ public class TiendaFragment extends Fragment implements View.OnClickListener {
                 solgone.setVisibility(View.INVISIBLE);
 
                 // drwable imagenes  de fondo de pantalla
-                //layout.setBackgroundResource(R.drawable.gafas);
+                layout.setBackgroundResource(R.drawable.gafas);
                 break;
             case R.id.item_sol:
                 transaction = getActivity().getSupportFragmentManager().beginTransaction();
@@ -136,7 +136,7 @@ public class TiendaFragment extends Fragment implements View.OnClickListener {
                 solgone.setVisibility(View.VISIBLE);
 
                 // drwable imagenes  de fondo de pantalla
-                // layout.setBackgroundResource(R.drawable.solimg);
+                layout.setBackgroundResource(R.drawable.gafassol);
                 break;
         }
     }

@@ -13,23 +13,24 @@
         <ImageView
             android:id="@+id/imgFotoCardFavorito"
             android:layout_width="match_parent"
-            android:layout_height="200dp"/>
+            android:layout_height="200dp" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
             android:text="Precio"
             android:textAlignment="center"
-            android:textSize="18sp"
-            android:gravity="center_horizontal" />
+            android:textSize="18sp" />
+
         <TextView
             android:id="@+id/PrecioGafacardFavprito"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
             android:text="S/200.00"
             android:textAlignment="center"
-            android:gravity="center_horizontal"
-            android:textSize="@dimen/longitud20"/>
+            android:textSize="@dimen/longitud20" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -37,23 +38,55 @@
             android:gravity="center"
             android:orientation="horizontal">
 
-            <ImageView
-                android:id="@+id/idIconoUnoFavorito"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_margin="@dimen/longitud10" />
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
 
-            <ImageView
-                android:id="@+id/idIconoDosFavorito"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_margin="@dimen/longitud10" />
+                <ImageView
 
-            <ImageView
-                android:id="@+id/idIconoTresFavorito"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_margin="@dimen/longitud10" />
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="@dimen/longitud10"
+                    android:src="@drawable/caritafeliz" />
+
+                <ImageView
+
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="@dimen/longitud10"
+                    android:src="@drawable/caratriste"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="@dimen/longitud10"
+                    android:src="@drawable/corazonb"
+                    android:visibility="invisible" />
+
+                <ImageView
+
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="@dimen/longitud10"
+                    android:src="@drawable/corazon" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="@dimen/longitud10"
+                    android:src="@drawable/caritoms" />
+            </RelativeLayout>
         </LinearLayout>
     </LinearLayout>
 

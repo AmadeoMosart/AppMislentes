@@ -35,30 +35,33 @@
             android:orientation="horizontal">
             <Button
                 android:id="@+id/btnTiendaOmbreFA"
-                android:layout_width="100dp"
-                android:layout_height="25dp"
+                android:layout_width="120dp"
+                android:layout_height="35dp"
+                android:layout_margin="@dimen/longitud10"
                 android:text="Hombre"
+                android:textSize="18sp"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:background="@drawable/solido_button_tienda"/>
+            <Button
+                android:id="@+id/btnTiendaMujerFA"
+                android:layout_width="120dp"
+                android:layout_height="35dp"
+                android:layout_margin="@dimen/longitud10"
+                android:text="Mujer"
+                android:textSize="18sp"
+                android:textAllCaps="false"
                 android:textColor="@android:color/white"
                 android:background="@drawable/solido_button_tienda"/>
 
-            <LinearLayout
-                android:layout_width="32dp"
-                android:layout_height="match_parent"/>
-            <Button
-                android:id="@+id/btnTiendaMujerFA"
-                android:layout_width="100dp"
-                android:layout_height="25dp"
-                android:text="Mujer"
-                android:textColor="@android:color/white"
-                android:background="@drawable/solido_button_tienda"/>
-            <LinearLayout
-                android:layout_width="32dp"
-                android:layout_height="match_parent"/>
             <Button
                 android:id="@+id/btnTiendaNiñoFA"
-                android:layout_width="100dp"
-                android:layout_height="25dp"
+                android:layout_width="120dp"
+                android:layout_height="35dp"
+                android:layout_margin="@dimen/longitud10"
                 android:text="Niños"
+                android:textSize="18sp"
+                android:textAllCaps="false"
                 android:textColor="@android:color/white"
                 android:background="@drawable/solido_button_tienda"/>
         </LinearLayout>

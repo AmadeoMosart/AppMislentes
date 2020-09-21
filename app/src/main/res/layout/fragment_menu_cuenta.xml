@@ -16,7 +16,8 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/longitud20">
 
                 <LinearLayout
                     android:layout_width="126dp"
@@ -37,7 +38,9 @@
                             android:layout_width="158dp"
                             android:layout_height="wrap_content"
                             android:text="Cuenta"
-                            android:textSize="35dp" />
+                            android:textSize="35dp"
+                            android:fontFamily="@font/amiko_semibold"
+                            android:textColor="@color/colorPrimary"/>
                     </LinearLayout>
 
                     <LinearLayout
@@ -45,7 +48,6 @@
                         android:layout_height="match_parent"
                         android:layout_margin="@dimen/longitud5"
                         android:gravity="center">
-
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -59,7 +61,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="@dimen/longitud10"
+                android:layout_marginLeft="@dimen/longitud20"
+                android:layout_marginRight="@dimen/longitud20"
                 android:orientation="vertical">
                 <!-- Ordenes -->
                 <LinearLayout
@@ -72,6 +75,7 @@
                     <ImageView
                         android:layout_width="@dimen/longitud50"
                         android:layout_height="@dimen/longitud50"
+                        android:src="@drawable/bolsa"
                       />
 
                     <LinearLayout
@@ -87,6 +91,7 @@
                             android:layout_height="62dp"
                             android:layout_marginLeft="@dimen/longitud5"
                             android:text="Ordenes"
+                            android:fontFamily="@font/amiko"
                             android:textSize="25dp"/>
                     </LinearLayout>
 
@@ -102,7 +107,11 @@
                     </LinearLayout>
                 </LinearLayout>
                 <!-- Fin ordenes -->
-
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="@dimen/longitud10"
+                    android:background="@color/colorPrimary"/>
                 <!-- Prescripcion -->
                 <LinearLayout
                     android:id="@+id/lnPrescripcionCuenta"
@@ -114,6 +123,7 @@
                     <ImageView
                         android:layout_width="@dimen/longitud50"
                         android:layout_height="@dimen/longitud50"
+                        android:src="@drawable/prescripcion"
                         />
 
                     <LinearLayout
@@ -125,6 +135,7 @@
 
                         <TextView
                             android:gravity="center"
+                            android:fontFamily="@font/amiko"
                             android:layout_width="wrap_content"
                             android:layout_height="62dp"
                             android:layout_marginLeft="@dimen/longitud5"
@@ -144,7 +155,11 @@
                     </LinearLayout>
                 </LinearLayout>
                 <!-- Fin Prescripcion -->
-
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="@dimen/longitud10"
+                    android:background="@color/colorPrimary"/>
                 <!-- Ubicacion tienda -->
                 <LinearLayout
                     android:id="@+id/lnUbicacionTiendaCuenta"
@@ -156,20 +171,22 @@
                     <ImageView
                         android:layout_width="@dimen/longitud50"
                         android:layout_height="@dimen/longitud50"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ubicacion"
                         />
 
                     <LinearLayout
                         android:layout_width="300dp"
-                        android:layout_height="match_parent"
+                        android:layout_height="wrap_content"
                         android:gravity="center_vertical"
                         android:textAlignment="center"
                         tools:ignore="RtlCompat">
 
                         <TextView
-
                             android:layout_width="wrap_content"
-                            android:layout_height="62dp"
+                            android:layout_height="wrap_content"
                             android:layout_marginLeft="@dimen/longitud5"
+                            android:fontFamily="@font/amiko"
                             android:text="Encuentra una tienda cerca"
                             android:textSize="25dp" />
                     </LinearLayout>
@@ -186,7 +203,11 @@
                     </LinearLayout>
                 </LinearLayout>
                 <!-- Fin Ubicacion tienda -->
-
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="@dimen/longitud10"
+                    android:background="@color/colorPrimary"/>
                 <!-- Configuracion perfil -->
                 <LinearLayout
                     android:id="@+id/lnPrefislCuenta"
@@ -198,6 +219,7 @@
                     <ImageView
                         android:layout_width="@dimen/longitud50"
                         android:layout_height="@dimen/longitud50"
+                        android:src="@drawable/perfil"
                        />
 
                     <LinearLayout
@@ -208,6 +230,7 @@
                         tools:ignore="RtlCompat">
 
                         <TextView
+                            android:fontFamily="@font/amiko"
                             android:gravity="center"
                             android:layout_width="wrap_content"
                             android:layout_height="62dp"
@@ -228,7 +251,11 @@
                     </LinearLayout>
                 </LinearLayout>
                 <!-- Fin Configuracion perfil-->
-
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="@dimen/longitud10"
+                    android:background="@color/colorPrimary"/>
                 <!-- FAQ -->
                 <LinearLayout
                     android:id="@+id/lnFAQCuenta"
@@ -240,6 +267,7 @@
                     <ImageView
                         android:layout_width="@dimen/longitud50"
                         android:layout_height="@dimen/longitud50"
+                        android:src="@drawable/faq"
                        />
 
                     <LinearLayout
@@ -250,6 +278,7 @@
                         tools:ignore="RtlCompat">
 
                         <TextView
+                            android:fontFamily="@font/amiko"
                             android:gravity="center"
                             android:layout_width="wrap_content"
                             android:layout_height="62dp"
@@ -270,7 +299,11 @@
                     </LinearLayout>
                 </LinearLayout>
                 <!-- Fin FAQ-->
-
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="@dimen/longitud10"
+                    android:background="@color/colorPrimary"/>
                 <!-- Notificaciones -->
                 <LinearLayout
                     android:id="@+id/lnNotificacionCuenta"
@@ -282,6 +315,7 @@
                     <ImageView
                         android:layout_width="@dimen/longitud50"
                         android:layout_height="@dimen/longitud50"
+                        android:src="@drawable/notificacion"
                       />
 
                     <LinearLayout
@@ -292,6 +326,7 @@
                         tools:ignore="RtlCompat">
 
                         <TextView
+                            android:fontFamily="@font/amiko"
                             android:gravity="center"
                             android:layout_width="wrap_content"
                             android:layout_height="62dp"
@@ -312,6 +347,11 @@
                     </LinearLayout>
                 </LinearLayout>
                 <!-- Notificaciones-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="@dimen/longitud10"
+                    android:background="@color/colorPrimary"/>
                 <!-- Reseña -->
                 <LinearLayout
                     android:id="@+id/lnReseñaCuenta"
@@ -323,6 +363,7 @@
                     <ImageView
                         android:layout_width="@dimen/longitud50"
                         android:layout_height="@dimen/longitud50"
+                        android:src="@drawable/resena"
                        />
 
                     <LinearLayout
@@ -333,6 +374,7 @@
                         tools:ignore="RtlCompat">
 
                         <TextView
+                            android:fontFamily="@font/amiko"
                             android:gravity="center"
                             android:layout_width="wrap_content"
                             android:layout_height="62dp"
@@ -363,11 +405,14 @@
                 android:gravity="center"
                 android:layout_margin="@dimen/longitud20">
                 <TextView
+                    android:fontFamily="@font/amiko_semibold"
+                    android:textColor="@color/colorprimario"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Necesitas Ayuda?"
                     android:textSize="@dimen/size20"/>
                 <TextView
+                    android:fontFamily="@font/amiko"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/longitud20"
@@ -377,5 +422,4 @@
             </LinearLayout>
         </LinearLayout>
     </ScrollView>
-
 </LinearLayout>
