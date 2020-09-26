@@ -1,14 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Vista.ViewContenedorPrincipal.FragmentCuenta.ViewMenuCuenta.PrescripcionFragment">
+    tools:context=".Vista.ViewContenedorPrincipal.FragmenPrincipal.FragmentCuenta.ViewMenuCuenta.PrescripcionFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:orientation="vertical">
 
-</FrameLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/longitud20">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:src="@drawable/equis" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/amiko_semibold"
+                android:text="Tu Prescripcion"
+                android:textColor="@color/colorprimario"
+                android:textSize="30dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:fontFamily="@font/amiko_semibold"
+                android:text="No tienes recetas almacenadas"
+                android:gravity="center_horizontal"
+                android:textSize="@dimen/size20"
+                android:layout_marginLeft="@dimen/longitud20"
+                android:layout_marginRight="@dimen/longitud20"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:fontFamily="@font/amiko_semibold"
+                android:text="Una vez que realice una compra, almacenaremos sus recetas aquí para usted"
+                android:gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/longitud20"
+                android:layout_marginRight="@dimen/longitud20"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

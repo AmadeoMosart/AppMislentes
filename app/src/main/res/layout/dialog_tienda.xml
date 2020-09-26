@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_white"
+        android:orientation="vertical">
+        <!-- Media -->
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="match_parent"
+            android:layout_height="194dp"
+            android:background="@drawable/border_white"
+            android:scaleType="centerCrop"
+            android:src="@drawable/dialog">
+
+        </pl.droidsonroids.gif.GifImageView>
+        <!-- Title, secondary and supporting text -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Presentando Prueba virtual"
+                android:textAppearance="?attr/textAppearanceHeadline6"
+                android:textColor="@color/colorsecundario"
+                android:textSize="@dimen/size20" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Ahora puedes probar las gafas usando solo la cámara de tu Android x (Solo toca cualquier marco para comenzar)" />
+
+
+        </LinearLayout>
+
+        <!-- Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnOkey"
+                style="?attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/solido_button_tienda"
+                android:text="ok"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/size20" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

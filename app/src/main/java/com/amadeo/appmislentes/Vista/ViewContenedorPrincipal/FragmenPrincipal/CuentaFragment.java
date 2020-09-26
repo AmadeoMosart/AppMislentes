@@ -1,6 +1,5 @@
 package com.amadeo.appmislentes.Vista.ViewContenedorPrincipal.FragmenPrincipal;
 
-import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -12,7 +11,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 import com.amadeo.appmislentes.R;
-import com.amadeo.appmislentes.Vista.ViewContenedorPrincipal.FragmentCuenta.MenuCuentaFragment;
+import com.amadeo.appmislentes.Vista.ViewContenedorPrincipal.FragmenPrincipal.FragmentCuenta.MenuCuentaFragment;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -83,10 +82,8 @@ public class CuentaFragment extends Fragment implements View.OnClickListener {
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.btnInitSecionCorreo:
-
                 transaction=getActivity().getSupportFragmentManager().beginTransaction();
                 transaction.replace(R.id.frameLayoutPrincipal,fragmentMenuCuenta).commit();
-
                 break;
         }
 

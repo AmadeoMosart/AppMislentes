@@ -4,9 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Vista.ViewContenedorPrincipal.FragmenteTienda.AnteojoFragment">
-
-    <!-- TODO: Update blank fragment layout -->
+    tools:context=".Vista.ViewContenedorPrincipal.FragmenPrincipal.FragmenteTienda.AnteojoFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -16,7 +14,10 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/longitud20"
+            android:layout_marginLeft="35sp"
+            android:layout_marginTop="@dimen/longitud20"
+            android:layout_marginRight="@dimen/longitud20"
+            android:layout_marginBottom="@dimen/longitud20"
             android:orientation="vertical">
 
             <TextView
@@ -31,39 +32,43 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/longitud20"
+            android:layout_marginRight="@dimen/longitud20"
             android:gravity="center"
             android:orientation="horizontal">
+
             <Button
                 android:id="@+id/btnTiendaOmbreFA"
-                android:layout_width="120dp"
+                android:layout_width="110dp"
                 android:layout_height="35dp"
-                android:layout_margin="@dimen/longitud10"
+                android:layout_margin="5dp"
+                android:background="@drawable/solido_button_tienda"
                 android:text="Hombre"
-                android:textSize="18sp"
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
-                android:background="@drawable/solido_button_tienda"/>
+                android:textSize="18sp" />
+
             <Button
                 android:id="@+id/btnTiendaMujerFA"
-                android:layout_width="120dp"
+                android:layout_width="110dp"
                 android:layout_height="35dp"
-                android:layout_margin="@dimen/longitud10"
+                android:layout_margin="5dp"
+                android:background="@drawable/solido_button_tienda"
                 android:text="Mujer"
-                android:textSize="18sp"
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
-                android:background="@drawable/solido_button_tienda"/>
+                android:textSize="18sp" />
 
             <Button
                 android:id="@+id/btnTiendaNiñoFA"
-                android:layout_width="120dp"
+                android:layout_width="110dp"
                 android:layout_height="35dp"
-                android:layout_margin="@dimen/longitud10"
+                android:layout_margin="5dp"
+                android:background="@drawable/solido_button_tienda"
                 android:text="Niños"
-                android:textSize="18sp"
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
-                android:background="@drawable/solido_button_tienda"/>
+                android:textSize="18sp" />
         </LinearLayout>
 
     </LinearLayout>

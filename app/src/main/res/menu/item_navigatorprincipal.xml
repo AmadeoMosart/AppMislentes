@@ -9,7 +9,8 @@
     <item
         android:id="@+id/item_try_On"
         android:enabled="true"
-        android:title="@string/txtTryOn" />
+        android:title="@string/txtTryOn"
+        android:icon="@drawable/ic_baseline_home"/>
     <item
         android:id="@+id/item_favorites"
         android:enabled="true"

@@ -4,15 +4,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
-import android.content.Context;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
 import com.amadeo.appmislentes.R;
-import com.amadeo.appmislentes.Vista.ViewContenedorPrincipal.FragmenteTienda.AnteojoFragment;
-import com.amadeo.appmislentes.Vista.ViewContenedorPrincipal.FragmenteTienda.ListaLentesTienda.ListaTiendaragment;
+import com.amadeo.appmislentes.Vista.ViewContenedorPrincipal.FragmenPrincipal.FragmenteTienda.AnteojoFragment;
+import com.amadeo.appmislentes.Vista.ViewContenedorPrincipal.FragmenPrincipal.FragmenteTienda.ListaLentesTienda.ListaTiendaragment;
 
 public class FiltrosActivity extends AppCompatActivity implements View.OnClickListener {
     ImageView clouseFiltro;

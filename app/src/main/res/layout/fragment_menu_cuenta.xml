@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Vista.ViewContenedorPrincipal.FragmentCuenta.MenuCuentaFragment">
+    tools:context=".Vista.ViewContenedorPrincipal.FragmenPrincipal.FragmentCuenta.MenuCuentaFragment">
 
     <ScrollView
         android:layout_width="match_parent"

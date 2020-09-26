@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Vista.ViewContenedorPrincipal.FragmenteTienda.LentesContactoFragment">
+    tools:context=".Vista.ViewContenedorPrincipal.FragmenPrincipal.FragmenteTienda.LentesContactoFragment">
 
     <!-- TODO: Update blank fragment layout -->
 
@@ -16,7 +16,10 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/longitud20"
+            android:layout_marginLeft="35sp"
+            android:layout_marginTop="@dimen/longitud20"
+            android:layout_marginRight="@dimen/longitud20"
+            android:layout_marginBottom="@dimen/longitud20"
             android:orientation="vertical">
 
             <TextView
@@ -32,11 +35,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/longitud20"
+            android:layout_marginRight="@dimen/longitud20">
             <Button
                 android:id="@+id/btnTiendaOmbreCON"
-                android:layout_margin="@dimen/longitud10"
-                android:layout_width="120dp"
+                android:layout_margin="5dp"
+                android:layout_width="110dp"
                 android:layout_height="35dp"
                 android:text="Hombre"
                 android:textSize="18sp"
@@ -46,20 +51,20 @@
 
             <Button
                 android:id="@+id/btnTiendaMujerCON"
-                android:layout_width="120dp"
+                android:layout_width="110dp"
                 android:layout_height="35dp"
                 android:text="Mujer"
                 android:textSize="18sp"
-                android:layout_margin="@dimen/longitud10"
+                android:layout_margin="5dp"
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
                 android:background="@drawable/solido_button_tienda"/>
 
             <Button
                 android:id="@+id/btnTiendaNiñoCON"
-                android:layout_width="120dp"
+                android:layout_width="110dp"
                 android:layout_height="35dp"
-                android:layout_margin="@dimen/longitud10"
+                android:layout_margin="5dp"
                 android:text="Niños"
                 android:textSize="18sp"
                 android:textAllCaps="false"

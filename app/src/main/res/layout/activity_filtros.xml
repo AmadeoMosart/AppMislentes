@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:background="@drawable/borde_filtro"
+        android:background="@drawable/bordewhithe"
         android:orientation="vertical">
 
         <LinearLayout
@@ -82,7 +82,7 @@
                         <Button
                             android:layout_width="150dp"
                             android:layout_height="wrap_content"
-                            android:background="@drawable/borde_filtro"
+                            android:background="@drawable/bordewhithe"
                             android:text="Extra Estrecho" />
 
                         <LinearLayout
@@ -92,7 +92,7 @@
                         <Button
                             android:layout_width="150dp"
                             android:layout_height="wrap_content"
-                            android:background="@drawable/borde_filtro"
+                            android:background="@drawable/bordewhithe"
                             android:text="Extrecho" />
                     </LinearLayout>
 
@@ -106,7 +106,7 @@
                         <Button
                             android:layout_width="150dp"
                             android:layout_height="wrap_content"
-                            android:background="@drawable/borde_filtro"
+                            android:background="@drawable/bordewhithe"
                             android:text="Medio" />
 
                         <LinearLayout
@@ -116,7 +116,7 @@
                         <Button
                             android:layout_width="150dp"
                             android:layout_height="wrap_content"
-                            android:background="@drawable/borde_filtro"
+                            android:background="@drawable/bordewhithe"
                             android:text="Amplio" />
                     </LinearLayout>
 
@@ -130,7 +130,7 @@
                         <Button
                             android:layout_width="150dp"
                             android:layout_height="wrap_content"
-                            android:background="@drawable/borde_filtro"
+                            android:background="@drawable/bordewhithe"
                             android:text="Extra Amplio" />
 
                     </LinearLayout>

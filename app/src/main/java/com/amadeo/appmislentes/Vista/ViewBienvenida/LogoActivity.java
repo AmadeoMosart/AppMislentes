@@ -20,6 +20,7 @@ public class LogoActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_logo);
         //Agregar Animacion
@@ -29,6 +30,7 @@ public class LogoActivity extends AppCompatActivity {
         ImageView LogoImageView=findViewById(R.id.LogoImageView);
 
         LogoImageView.setAnimation(animation1);
+
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {

@@ -1,14 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Vista.ViewContenedorPrincipal.FragmentCuenta.ViewMenuCuenta.UbicacionTiendaFragment">
+    tools:context=".Vista.ViewContenedorPrincipal.FragmenPrincipal.FragmentCuenta.ViewMenuCuenta.UbicacionTiendaFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:orientation="vertical">
 
-</FrameLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/longitud20">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:src="@drawable/equis" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="400dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/longitud50"
+                android:layout_marginRight="@dimen/longitud50"
+                android:fontFamily="@font/amiko_semibold"
+                android:gravity="center_horizontal"
+                android:text="Lugar de Venta"
+                android:textAlignment="center"
+                android:textSize="@dimen/size20" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/longitud50"
+                android:layout_marginRight="@dimen/longitud50"
+                android:fontFamily="@font/amiko_semibold"
+                android:gravity="center_horizontal"
+                android:text="Nuestra tienda tiene marcos, libros, fotomatones, asesores amigables y lugares cómodos para colgar."
+                android:textAlignment="center" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/longitud20"
+                android:gravity="center">
+
+                <Button
+                    android:layout_width="@dimen/longitud150"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/longitud10"
+                    android:background="@drawable/solido_button_tienda"
+                    android:text="Encontrar tiendas cercanas"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:layout_width="@dimen/longitud150"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/longitud10"
+                    android:background="@drawable/solido_button_tienda"
+                    android:text="Buscar Tiendas"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

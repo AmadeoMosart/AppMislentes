@@ -2,7 +2,6 @@ package com.amadeo.appmislentes.Vista.ViewContenedorPrincipal.FragmenPrincipal;
 
 import android.os.Bundle;
 
-import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
@@ -13,9 +12,9 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.amadeo.appmislentes.R;
-import com.amadeo.appmislentes.Vista.ViewContenedorPrincipal.FragmenteTienda.AnteojoFragment;
-import com.amadeo.appmislentes.Vista.ViewContenedorPrincipal.FragmenteTienda.LentesContactoFragment;
-import com.amadeo.appmislentes.Vista.ViewContenedorPrincipal.FragmenteTienda.LentesSolFragment;
+import com.amadeo.appmislentes.Vista.ViewContenedorPrincipal.FragmenPrincipal.FragmenteTienda.AnteojoFragment;
+import com.amadeo.appmislentes.Vista.ViewContenedorPrincipal.FragmenPrincipal.FragmenteTienda.LentesContactoFragment;
+import com.amadeo.appmislentes.Vista.ViewContenedorPrincipal.FragmenPrincipal.FragmenteTienda.LentesSolFragment;
 
 /**
  * A simple {@link Fragment} subclass.
