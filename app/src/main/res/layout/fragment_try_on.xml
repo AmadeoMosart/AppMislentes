@@ -9,7 +9,7 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="617dp">
+        android:layout_height="623dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -61,6 +61,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/longitud5"
                     android:fontFamily="@font/amiko"
                     android:text="Responda nuestro cuestionario o pruébese los anteojos con la prueba virtual. Le enviaremos sus favoritos para que los pruebe gratis, sin necesidad de receta." />
 
@@ -83,6 +84,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/longitud5"
                     android:fontFamily="@font/amiko"
                     android:text="Ellos vuelven a colocar los 5 marcos en la caja y los envían por correo con nuestra etiqueta de devolución prepaga" />
 
@@ -105,6 +107,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/longitud5"
                     android:fontFamily="@font/amiko"
                     android:text="Si encuentra una montura ganadora, compre un par nuevo con su receta en línea o en cualquier tienda minorista." />
 
@@ -280,14 +283,14 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="73dp"
+        android:layout_height="wrap_content"
         android:gravity="center"
+        android:layout_margin="@dimen/longitud10"
         android:orientation="horizontal">
 
         <Button
             android:layout_width="190dp"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/longitud10"
             android:background="@drawable/solido_button_tienda"
             android:text="Tomar una Prueba"
             android:textAllCaps="false"

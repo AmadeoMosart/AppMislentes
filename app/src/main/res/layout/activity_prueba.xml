@@ -19,8 +19,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-               >
+                android:layout_height="wrap_content">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -41,17 +40,18 @@
                 android:orientation="vertical">
 
 
-                <RelativeLayout
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="200dp"
-                    android:layout_margin="@dimen/longitud20">
+                    android:layout_margin="@dimen/longitud20"
+                    android:orientation="vertical">
 
-                    <ImageView
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvImagenPrueba"
                         android:layout_width="match_parent"
-                        android:layout_height="200dp"
-                        android:src="@drawable/lente" />
+                        android:layout_height="200dp" />
 
-                </RelativeLayout>
+                </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -125,24 +125,42 @@
                     </pl.droidsonroids.gif.GifImageView>
 
                 </LinearLayout>
-
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="@dimen/longitud10"
-                    android:orientation="vertical">
+                    android:gravity="center"
+                    android:layout_marginLeft="@dimen/longitud20"
+                    android:layout_marginRight="@dimen/longitud20">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Buscando el próximo clásico moderno que le ofrecemos: un número de lentes redondas con acentos atemporales, como un puente de ojo de cerradura rematado con detalles festoneados"
+                        android:fontFamily="@font/amiko"
+                        android:textSize="@dimen/size20"/>
 
-                    <pl.droidsonroids.gif.GifImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="263dp"
-                        android:src="@drawable/gif"></pl.droidsonroids.gif.GifImageView>
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="95dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="#619D1289"
                     android:gravity="center">
 
+                    <pl.droidsonroids.gif.GifImageView
+                        android:layout_marginLeft="@dimen/longitud20"
+                        android:layout_marginRight="@dimen/longitud20"
+                        android:layout_width="match_parent"
+                        android:layout_height="263dp"
+                        android:src="@drawable/gif">
+                    </pl.droidsonroids.gif.GifImageView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Usa tu cámara para probar marcos ahora mismo"
+                        android:textSize="@dimen/size20"
+                        android:fontFamily="@font/amiko_semibold"
+                        android:textAlignment="center"/>
                     <Button
                         android:id="@+id/prueba"
                         android:layout_width="190dp"
@@ -151,7 +169,16 @@
                         android:text="Acceder a la Prueba Virtual"
                         android:textAllCaps="false"
                         android:textColor="@android:color/white"
-                        android:textSize="18sp" />
+                        android:textSize="18sp"
+                        android:layout_margin="@dimen/longitud20"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="95dp"
+                    android:gravity="center">
+
+
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
@@ -174,6 +201,7 @@
             android:textSize="18sp" />
 
         <Button
+            android:id="@+id/btnPruebaComprar"
             android:layout_width="190dp"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/longitud10"
