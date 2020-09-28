@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Vista.ViewAdicionales.TipoLenteActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/longitud20"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="@dimen/longitud20"
+                    android:layout_height="@dimen/longitud20"
+                    android:layout_margin="@dimen/longitud10"
+                    android:src="@drawable/aspa" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/amiko_semibold"
+                    android:text="Seleccione un tipo de lente"
+                    android:textColor="@color/colorsecundario"
+                    android:textSize="@dimen/size20" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/longitud20"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/lentedos" />
+
+            </LinearLayout>
+
+
+            <!--Medio -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/amiko_semibold"
+                        android:text="Clasica"
+                        android:textColor="@color/colorsecundario"
+                        android:textSize="@dimen/size20" />
+
+                    <TextView
+                        android:layout_width="225dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/amiko_semibold"
+                        android:text="Si tu cara es tamaño medio (La opción mas Común)"
+                        android:textSize="@dimen/size15" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <Button
+                        android:layout_width="90dp"
+                        android:layout_height="35dp"
+                        android:background="@drawable/solido_button_tienda"
+                        android:text="S/0.00"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/white" />
+                </LinearLayout>
+
+            </LinearLayout>
+            <!--FIN Medio -->
+            <!--Amplio -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/amiko_semibold"
+                        android:text="Filtrado de luz azul"
+                        android:textColor="@color/colorsecundario"
+                        android:textSize="@dimen/size20" />
+
+                    <TextView
+                        android:layout_width="225dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/amiko_semibold"
+                        android:text="Si tu cara es tamaño medio (La opción mas Común)"
+                        android:textSize="@dimen/size15" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <Button
+                        android:layout_width="90dp"
+                        android:layout_height="35dp"
+                        android:background="@drawable/solido_button_tienda"
+                        android:text="S/295.00"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/white" />
+                </LinearLayout>
+            </LinearLayout>
+            <!--FIN Amplio -->
+            <!--Amplio -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/amiko_semibold"
+                        android:text="Sensible a la luz"
+                        android:textColor="@color/colorsecundario"
+                        android:textSize="@dimen/size20" />
+
+                    <TextView
+                        android:layout_width="225dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/amiko_semibold"
+                        android:text="Si tu cara es tamaño medio (La opción mas Común)"
+                        android:textSize="@dimen/size15" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <Button
+                        android:layout_width="90dp"
+                        android:layout_height="35dp"
+                        android:background="@drawable/solido_button_tienda"
+                        android:text="S/295.00"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/white" />
+                </LinearLayout>
+            </LinearLayout>
+            <!--FIN Amplio -->
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
