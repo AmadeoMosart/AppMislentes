@@ -28,7 +28,6 @@ Button btnPrescription;
      switch (v.getId()){
          case R.id.btnPrescription:
              Intent intent = new Intent(PrescripcionActivity.this, TipoLenteActivity.class);
-             Toast.makeText(this, "", Toast.LENGTH_SHORT).show();
              startActivity(intent);
              break;
      }
